@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy | Lab Test Form</title>
+    <link rel="stylesheet" href="Css/lab-test.css">
+</head>
+
+<body>
+    <section id="block">
+        <form action="" id="lab-form">
+            <img src="Images/labtest/lab-test.jpg" alt="Lab-Test-Img">
+
+            <h2>1. Your Contact Details</h2>
+
+            <label for="fullname"></label>
+            <input id="fullname" type="text" name="patient_name" placeholder="Full Name" required>
+
+            <label for="pid"></label>
+            <input id="pid" type="text" name="patient_id" placeholder="Patient Id if exists" required>
+
+            <label for="contact"></label>
+            <input id="contact" type="tel" name="contact_no" placeholder="Contact Number" required>
+
+            <label for="email"></label>
+            <input id="email" type="email" name="email" placeholder="Email Id" required>
+
+            <h2>2. Address</h2>
+
+            <label for="houseno"></label>
+            <input id="houseno" type="text" name="h-no" placeholder="H-No" required>
+
+            <label for="street"></label>
+            <input id="street" type="text" name="street" placeholder="Street" required>
+
+            <label for="area"></label>
+            <input id="area" type="text" name="area" placeholder="Area" required>
+
+            <h4>District</h4>
+
+            <select id="district" name="district" required>
+                <option value="">Choose</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Chengalpattu">Chengalpattu</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Tiruchirappalli">Tiruchirappalli</option>
+                <option value="Tiruvannamalai" disabled>Tiruvannamalai</option>
+            </select>
+
+            <h2>3. Choose the Test Type</h2>
+            <p>(Check atleast one box without fail)</p>
+            <input type="checkbox" id="c1" name="option1" value="CBC">
+            <label for="c1">CBC</label>
+            <br>
+            <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+            <label for="c2">Complete Urine</label>
+            <br>
+            <input type="checkbox" id="c3" name="option3" value="Liquid Profile">
+            <label for="c3">Liquid Profile</label>
+            <br>
+            <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+            <br>
+            <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+            <label for="c5">Glucose Test</label>
+
+            <h2>4. Do you want a hard copy of the report also?</h2>
+            <input type="radio" id="r1" name="report" value="True" required>
+            <label for="r1">Yes</label>
+            <input type="radio" id="r2" name="report" value="False">
+            <label for="r2">No</label>
+
+            <h2>5. Select your Comfortable <br> Date and Time</h2>
+            <input type="date" name="date" required>
+            <br><br>
+            <input type="time" name="time" required>
+            <br><br>
+        </form>
+        <button form="lab-form" type="reset">Reset</button>
+        <button form="lab-form" type="submit">Submit</button>
+        <button form="lab-form" onclick="window.location.href='home.html';" type="button">Back</button>
+        
+
+    </section>
+</body>
+
+</html>
